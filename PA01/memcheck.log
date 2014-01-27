@@ -1,0 +1,82 @@
+==15385== Memcheck, a memory error detector
+==15385== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==15385== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==15385== Command: ./pa01
+==15385== Parent PID: 7201
+==15385== 
+--15385-- 
+--15385-- Valgrind options:
+--15385--    --suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp
+--15385--    --tool=memcheck
+--15385--    --leak-check=full
+--15385--    --verbose
+--15385--    --log-file=memcheck.log
+--15385-- Contents of /proc/version:
+--15385--   Linux version 3.8.0-34-generic (buildd@lamiak) (gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ) #49-Ubuntu SMP Tue Nov 12 18:02:44 UTC 2013
+--15385-- Arch and hwcaps: X86, x86-sse1-sse2
+--15385-- Page sizes: currently 4096, max supported 4096
+--15385-- Valgrind library directory: /usr/lib/valgrind
+--15385-- Reading syms from /lib/i386-linux-gnu/ld-2.17.so
+--15385--   Considering /lib/i386-linux-gnu/ld-2.17.so ..
+--15385--   .. CRC mismatch (computed 402e259a wanted e71cceb9)
+--15385--   Considering /usr/lib/debug/lib/i386-linux-gnu/ld-2.17.so ..
+--15385--   .. CRC is valid
+--15385--   Considering /usr/lib/debug/lib/i386-linux-gnu/ld-2.17.so ..
+--15385--   .. CRC is valid
+--15385-- Reading syms from /home/adam/Documents/SECE264/Solutions/SECE264/PA01/pa01
+--15385-- Reading syms from /usr/lib/valgrind/memcheck-x86-linux
+--15385--   Considering /usr/lib/valgrind/memcheck-x86-linux ..
+--15385--   .. CRC mismatch (computed 6fd19ca3 wanted 306c4bda)
+--15385--    object doesn't have a symbol table
+--15385--    object doesn't have a dynamic symbol table
+--15385-- Scheduler: using generic scheduler lock implementation.
+--15385-- Reading suppressions file: /usr/lib/valgrind/debian-libc6-dbg.supp
+--15385-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==15385== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-15385-by-adam-on-???
+==15385== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-15385-by-adam-on-???
+==15385== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-15385-by-adam-on-???
+==15385== 
+==15385== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==15385== don't want to do, unless you know exactly what you're doing,
+==15385== or are doing some strange experiment):
+==15385==   /usr/lib/valgrind/../../bin/vgdb --pid=15385 ...command...
+==15385== 
+==15385== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==15385==   /path/to/gdb ./pa01
+==15385== and then give GDB the following command
+==15385==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=15385
+==15385== --pid is optional if only one valgrind process is running
+==15385== 
+--15385-- REDIR: 0x40185d0 (strlen) redirected to 0x3806e494 (???)
+--15385-- REDIR: 0x4018350 (index) redirected to 0x3806e46f (???)
+--15385-- Reading syms from /usr/lib/valgrind/vgpreload_core-x86-linux.so
+--15385--   Considering /usr/lib/valgrind/vgpreload_core-x86-linux.so ..
+--15385--   .. CRC mismatch (computed 5dbb7262 wanted 348cf268)
+--15385--    object doesn't have a symbol table
+--15385-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so
+--15385--   Considering /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so ..
+--15385--   .. CRC mismatch (computed 25f7b345 wanted 995b0864)
+--15385--    object doesn't have a symbol table
+--15385-- Reading syms from /lib/i386-linux-gnu/libc-2.17.so
+--15385--   Considering /lib/i386-linux-gnu/libc-2.17.so ..
+--15385--   .. CRC mismatch (computed 8d07e7d6 wanted 1996366c)
+--15385--   Considering /usr/lib/debug/lib/i386-linux-gnu/libc-2.17.so ..
+--15385--   .. CRC is valid
+--15385--   Considering /usr/lib/debug/lib/i386-linux-gnu/libc-2.17.so ..
+--15385--   .. CRC is valid
+--15385-- REDIR: 0x40ca800 (strnlen) redirected to 0x4024580 (_vgnU_ifunc_wrapper)
+--15385-- REDIR: 0x40cbd80 (strncasecmp) redirected to 0x4024580 (_vgnU_ifunc_wrapper)
+--15385-- REDIR: 0x40d0ff0 (memrchr) redirected to 0x4024580 (_vgnU_ifunc_wrapper)
+--15385-- REDIR: 0x40e5860 (wcslen) redirected to 0x4024580 (_vgnU_ifunc_wrapper)
+--15385-- REDIR: 0x40ca9a0 (__GI_strrchr) redirected to 0x402c700 (__GI_strrchr)
+--15385-- REDIR: 0x40ca740 (__GI_strlen) redirected to 0x402cba0 (__GI_strlen)
+--15385-- REDIR: 0x40c60b0 (free) redirected to 0x402abd0 (free)
+==15385== 
+==15385== HEAP SUMMARY:
+==15385==     in use at exit: 0 bytes in 0 blocks
+==15385==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==15385== 
+==15385== All heap blocks were freed -- no leaks are possible
+==15385== 
+==15385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==15385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

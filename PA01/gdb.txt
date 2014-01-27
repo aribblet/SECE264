@@ -1,0 +1,14 @@
+Starting program: /home/adam/Documents/SECE264/Solutions/SECE264/PA01/./pa01 
+[Inferior 1 (process 15405) exited normally]
+Function "ArrayIsIncreasing" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) Breakpoint 1 at 0x804855f: file pa01.c, line 30.
+Starting program: /home/adam/Documents/SECE264/Solutions/SECE264/PA01/./pa01 
+[Inferior 1 (process 15413) exited normally]
+No symbol "xxx" in current context.
+Starting program: /home/adam/Documents/SECE264/Solutions/SECE264/PA01/./pa01 1
+[Inferior 1 (process 15415) exited normally]
+No stack.
+Starting program: /home/adam/Documents/SECE264/Solutions/SECE264/PA01/./pa01 1
+[Inferior 1 (process 15416) exited normally]
+No stack.
+Undefined command: "exit".  Try "help".
