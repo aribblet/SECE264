@@ -80,7 +80,13 @@ Image * Image_load(const char * filename)
 
 int Image_save(const char * filename, Image * image);
 
-void Image_free(Image * image);
+void Image_free(Image * image)
+{
+  if(image == NULL){
+    return;}
+  free(image -> data);
+  free(image);
+}
 
 void linearNormalization(int width, int height, uint8_t * intensity)
 {
